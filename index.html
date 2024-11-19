@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>DeFiApp</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>DeFiApp</h1>
+ 
+
+    <!-- Connect Wallet Button -->
+    <button id="connectMetaMask">Connect MetaMask</button>
+
+    <!-- Container for all sections -->
+    <div class="container">
+      <!-- Deposit ETH -->
+      <div class="box">
+        <h3>Deposit </h3>
+        <input type="number" id="depositAmount" placeholder="Amount in ETH" />
+        <button id="deposit">Deposit</button>
+      </div>
+
+      <!-- Borrow ETH -->
+      <div class="box">
+        <h3>Borrow </h3>
+        <input type="number" id="borrowAmount" placeholder="Amount in ETH" />
+        <button id="borrow">Borrow</button>
+      </div>
+
+      <!-- Repay ETH -->
+      <div class="box">
+        <h3>Repay </h3>
+        <input type="number" id="repayAmount" placeholder="Amount in ETH" />
+        <button id="repay">Repay</button>
+      </div>
+
+      <!-- Withdraw ETH -->
+      <div class="box">
+        <h3>Withdraw </h3>
+        <button id="withdraw">Withdraw</button>
+      </div>
+
+      <!-- Wallet Balances -->
+      <div>
+        <h3>Wallet Balances</h3>
+        <div id="userWalletProgress" class="circular-progress">
+            <span id="userWalletBalanceText" class="circular-text">0 ETH (0%)</span>
+        </div>
+        <div id="contractWalletProgress" class="circular-progress">
+            <span id="contractWalletBalanceText" class="circular-text">0 ETH (0%)</span>
+        </div>
+        <button id="refreshBalances">Refresh Balances</button>
+    </div>
+    
+      
+
+    <!-- Ethers.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script>
+
+    <!-- Your custom JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

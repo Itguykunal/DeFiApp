@@ -1,0 +1,90 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(#0066ff, #009df0); /* Gradient background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    color: #ffffff; /* White color for main heading */
+}
+
+h3 {
+    color: #000000; /* Black color for subheadings */
+}
+
+/* Buttons */
+button {
+    background-color: #01214f; /* Deep blue color */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px; /* Rounded corners */
+    margin: 10px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #f6ea00; /* Bright yellow on hover */
+    color: #000; /* Black text on hover */
+}
+
+/* Input fields */
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px; /* Rounded corners */
+    border: 1px solid #f6ea00; /* Yellow border */
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Flex container for boxes */
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    flex-wrap: wrap; /* Wrap boxes on smaller screens */
+    gap: 20px; /* Space between boxes */
+    margin-top: 20px;
+}
+
+/* Individual boxes */
+div.box {
+    margin: 20px auto;
+    height: 200px;
+    padding: 20px;
+    max-width: 225px;
+    border: 1px solid #f6ea00; /* Yellow border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    color: #000; /* Black text */
+}
+
+/* Balances display */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.circular-progress {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#4caf50 0%, #ddd 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.circular-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
